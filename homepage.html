@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Web Page - Form Pemesanan</title>
+  </head>
+  <body>
+    <!-- Navigasi -->
+    <table border="1" cellpadding="8" cellspacing="0" width="100%">
+      <tr>
+        <td align="center">
+          <a href="#">Home</a> | <a href="#">Generate Link</a> |
+          <a href="#">Transaction History</a> | <a href="#">Policy</a> |
+          <a href="#">Logout</a>
+        </td>
+      </tr>
+    </table>
+
+    <br /><br />
+
+    <form action="" method="post" enctype="multipart/form-data">
+      <table cellpadding="5" cellspacing="0" width="100%">
+        <tr valign="top">
+          <!-- Kiri: gambar & upload -->
+          <td width="220" align="center">
+            <table
+              border="1"
+              cellpadding="0"
+              cellspacing="0"
+              width="180"
+              height="180"
+            >
+              <tr>
+                <td>
+                  <svg width="180" height="180" style="display: block">
+                    <line
+                      x1="0"
+                      y1="0"
+                      x2="180"
+                      y2="180"
+                      stroke="#333"
+                      stroke-width="1.5"
+                    />
+                    <line
+                      x1="180"
+                      y1="0"
+                      x2="0"
+                      y2="180"
+                      stroke="#333"
+                      stroke-width="1.5"
+                    />
+                  </svg>
+                </td>
+              </tr>
+            </table>
+            <br />
+            <input type="file" id="upload-input" hidden />
+            <button
+              type="button"
+              onclick="document.getElementById('upload-input').click()"
+            >
+              Upload Picture
+            </button>
+          </td>
+
+          <!-- Kanan: isian -->
+          <td>
+            <table cellpadding="4" cellspacing="0">
+              <tr>
+                <td width="160" align="right">
+                  <label for="title">Title Here :</label>
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    id="title"
+                    name="title"
+                    value="MacBook Air £800"
+                    size="45"
+                  />
+                </td>
+              </tr>
+              <tr valign="top">
+                <td align="right">
+                  <label for="description">Description :</label>
+                </td>
+                <td>
+                  <textarea
+                    id="description"
+                    name="description"
+                    rows="5"
+                    cols="43"
+                  >
+Year : 2009
+
+Model :
+
+Condition : Mint</textarea
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td align="right">
+                  <label for="account_number">Account Number :</label>
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    id="account_number"
+                    name="account_number"
+                    value="123-456-789-0"
+                    size="45"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td align="right"><label for="bank">Bank :</label></td>
+                <td>
+                  <select id="bank" name="bank">
+                    <option selected>HSBC</option>
+                    <option>BCA</option>
+                    <option>Mandiri</option>
+                    <option>BNI</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td align="right">
+                  <label for="account_holder">Account Holder :</label>
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    id="account_holder"
+                    name="account_holder"
+                    value="Name Here"
+                    size="45"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td align="right">
+                  <label for="transaction">Transaction :</label>
+                </td>
+                <td>
+                  <select id="transaction" name="transaction">
+                    <option selected>1</option>
+                    <option>2</option>
+                    <option>3</option></select
+                  ><br />
+                  <small
+                    ><i
+                      >* if the transaction is for 3 person, choose 3 from the
+                      drop-down list</i
+                    ></small
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <label for="send_mobile"
+                    ><input
+                      type="checkbox"
+                      id="send_mobile"
+                      name="send_mobile"
+                      checked
+                    />
+                    <font color="green">Send to Mobile Phone</font></label
+                  ><br />
+                  <label for="send_email"
+                    ><input
+                      type="checkbox"
+                      id="send_email"
+                      name="send_email"
+                      checked
+                    />
+                    <font color="green">Send to Email</font></label
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td align="right">
+                  <label for="mobile_number">Send to Mobile Phone :</label>
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    id="mobile_number"
+                    name="mobile_number"
+                    value="1234567890, 1234567891"
+                    size="45"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td align="right">
+                  <label for="email_address">Send to Email :</label>
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    id="email_address"
+                    name="email_address"
+                    value="mImm2g13@soton.ac.uk, foo_06@yahoo.com"
+                    size="45"
+                  />
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+
+      <br /><br />
+
+      <!-- Submit -->
+      <p align="center">
+        <a
+          href="hasil.html"
+          style="
+            background: green;
+            color: white;
+            padding: 6px 20px;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+          "
+        >
+          Generate Kebi Link
+        </a>
+      </p>
+    </form>
+  </body>
+</html>

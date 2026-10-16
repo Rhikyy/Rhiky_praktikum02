@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Web Page - Ringkasan Pesanan</title>
+  </head>
+  <body>
+    <!-- Navigasi -->
+    <table border="1" cellpadding="8" cellspacing="0" width="100%">
+      <tr>
+        <td align="center">
+          <a href="#">Home</a> | <a href="#">Register</a> |
+          <a href="#">Policy</a> |
+          <a href="#">About</a>
+        </td>
+      </tr>
+    </table>
+
+    <br />
+    <h2 align="center">Order Confirmation & Payment Summary</h2>
+    <br />
+
+    <!-- Tabel Utama Ringkasan -->
+    <table
+      border="1"
+      cellpadding="10"
+      cellspacing="0"
+      width="100%"
+      bgcolor="#f9f9f9"
+    >
+      <tr valign="top">
+        <!-- Kiri: gambar produk (Dummy Image Placeholder Murni HTML) -->
+        <td width="220" align="center">
+          <table
+            border="1"
+            cellpadding="0"
+            cellspacing="0"
+            width="180"
+            height="180"
+            bgcolor="#ffffff"
+          >
+            <tr>
+              <td align="center" valign="middle">
+                <img
+                  src="assets/img/macbook.jpeg"
+                  alt="Product Photo"
+                  width="180"
+                  height="180"
+                  style="display: block; border: 0"
+                />
+              </td>
+            </tr>
+          </table>
+        </td>
+
+        <!-- Kanan: detail & hasil pembayaran -->
+        <td>
+          <table cellpadding="6" cellspacing="0" width="100%">
+            <tr valign="top">
+              <td width="180" align="right">Product Title :</td>
+              <td><b>MacBook Air</b></td>
+            </tr>
+            <tr valign="top">
+              <td align="right">Description :</td>
+              <td>
+                <b>
+                  Year : 2009<br />
+                  Model : Standard<br />
+                  Condition : Mint
+                </b>
+              </td>
+            </tr>
+            <tr>
+              <td align="right">Total Amount :</td>
+              <td><b>£800</b></td>
+            </tr>
+            <tr>
+              <td align="right">Pay to :</td>
+              <td><b>123-456-789-0 (HSBC)</b></td>
+            </tr>
+
+            <tr>
+              <td colspan="2"><hr /></td>
+            </tr>
+
+            <!-- Menampilkan Data Pembeli (Hasil Form) -->
+            <tr>
+              <td align="right">Payment Type :</td>
+              <td><b>Visa Debit</b></td>
+            </tr>
+            <tr>
+              <td align="right">Account Holder :</td>
+              <td><b>Name Here</b></td>
+            </tr>
+            <tr>
+              <td align="right">Account No :</td>
+              <td><b>123-456-789-0</b></td>
+            </tr>
+
+            <tr>
+              <td colspan="2"><hr /></td>
+            </tr>
+
+            <tr>
+              <td align="right">Notification Details :</td>
+              <td>
+                <font color="green">✔ SMS Copy Requested</font><br />
+                <font color="green">✔ Email Receipt Requested</font>
+              </td>
+            </tr>
+            <tr>
+              <td align="right">Sent to Mobile Phone :</td>
+              <td><b>1234567890, 1234567891</b></td>
+            </tr>
+            <tr>
+              <td align="right">Sent to Email :</td>
+              <td><b>mImm2g13@soton.ac.uk, fys_06@yahoo.com</b></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+
+    <br /><br />
+
+    <!-- Action Buttons -->
+    <p align="center">
+      <button type="button">Print Summary</button>
+
+      &nbsp;&nbsp;&nbsp;&nbsp;
+
+      <button type="button">Confirm & Pay using QuidLink</button>
+    </p>
+  </body>
+</html>
